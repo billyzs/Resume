@@ -1,0 +1,80 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
+
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}} 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Shao "Billy" Zhou} % Your name
+\address{603 Concord Avenue Unit 300, Cambridge MA 02138} % Your address
+\address{+1 774 314 1691 \\ billyzs.728@gmail.com}
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+%\address{+1 774 314 1691 \\ billyzs.728@gmail.com}  % Your phone number and email
+
+\begin{document}
+
+% OBJECTIVE ------------------------------------------------
+
+\begin{rSection}{OBJECTIVE}
+{Research Engineer in Standford CV Lab}
+\end{rSection}
+
+% SKILL ---------------------------------------------------
+\begin{rSection}{Skills}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Programming & Modern C++, Python 2 \& 3, Linux Shell\\
+Software &  Linux, Robot Operating System, TensorFlow, OpenCV, Git, Docker  \\
+\end{tabular}
+\end{rSection}
+
+% WORK -----------------------------------------------------
+\begin{rSection}{Work Experience} %\itemsep -3pt  
+% enclose in braces to limit scope of \bf
+{\bf{Associate Software Engineer}}, iRobot Corp. \hfill July 2017 - present \\ 
+Developed embedded Linux application that run on ARM SoC to autonomously control mobile robots. Modelled safe and robust behaviours using finite state machine. Wrote algorithms that leverage sensor data to help robots respond to changes in physical environment. Implemented features that serializes robots’ internal states for communication with cloud sice IoT stack, to enable multi-robot collaboration. Oversaw the cross-team software development of the next generation Bravva Jet$^{\tiny{\textregistered}}$ robotic mops. Participated in regular triage, planning, code review and other release activities. Participated in the conceptualization of future generation of deep learning powered robotic vacuum cleaners.
+
+{\bf{Robotics Engineering Intern}}, CloudMinds Inc. \hfill May 2016 - Aug 2016 \\
+Used Kinect and RealSense depth cameras to incorporate visual feedback into the control and motion planning of an ABB YuMi$^{\tiny{\textregistered}}$ industrial robot. Implemented CUDA-accelerated object detection, localization and tracking routines in C++ and Python using regional convolutional neural networks and correlation trackers. Experimented with dense visual SLAM using depth cameras and mobile robot base.
+\end{rSection}
+
+% EDU -----------------------------------------------------
+\begin{rSection}{Education}
+{\bf B.Sc. Robotics Engineering (GPA 3.86/4)} Worcester Polytechnic Institute (WPI), \hfill {Aug 2013 - May 2017}\\
+{\bf{Relevant courses:}} \emph{Deep Neural Networks}, \emph{Robot Dynamics}, \emph{Motion Planning}, \emph{Optimal Control}, \emph{Guidance, Navigation and Communication}, \emph{Object-Oriented Design}, \emph{Embedded Computing}, \emph{Software Engineering}
+\end{rSection}
+
+% SKILL ---------------------------------------------------
+\begin{rSection}{PROJECTS}
+{\bf{Autonomous Racecar Driving}}, class project for \emph{Intro to Deep Neural Networks}, WPI \hfill Apr 2017 \\
+Trained a neural network agent that plays a racing simulation game using Deep Deterministic Policy Gradient. Designed cost and reward functions, training scheme and regularization techniques. Implemented forward propagation in TensorFlow and Keras. Resulting agent outperforms expert human players, achiving top speed of 180 km/h in simulation.
+
+{\bf{SLAM with TurtleBot}}, class project for \emph{Unified Robotics IV}, WPI \hfill Oct - Dec 2015 \\
+Worked in a team of three students to implement simultaneous localization and mapping on a TurtleBot. Developed Python programs in Linux using the Robot Operating System to drive the robot and detect obstacles. Implemented path planning using A-Star algorithm. Designed frontier exploration techniques and RViz visualizations for the mapping process. Consistently and successfully mapped an unknown environment.
+\end{rSection} 
+
+% Awards ----------------------------------------------
+\begin{rSection}{Activities and awards}
+{\bf{Software Star Award}}, iRobot Corp. \hfill Oct 2017 \\
+{\bf{Outstanding Member of the Class of 2017}}, WPI \hfill May 2014
+\end{rSection}
+\end{document}
